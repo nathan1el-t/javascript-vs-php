@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Differences</th>
+            <th>PHP</th>
+            <th>Javascript</th>
+            
+        </tr>
+        <tr>
+            <td>Printing to the screen/terminal</td>
+            <td>echo "message";</td>
+            <td>console.log('message');</td>
+        </tr>
+        <tr>
+            <td>Setting variables</td>
+            
+            <td>
+                Uses $<br>
+                eg: $x=5;
+            </td>
+            <td>
+                Uses let, var, const<br>
+                eg: let x=5;
+            </td>
+        </tr>
+        <tr>
+            <td>Declaring Functions</td>
+            <td>
+            Can do the first 2 that javascript does</td>
+            <td>Theres 3 ways to create a function:
+                <br><ol>
+                    <li>The normal way</li>
+                    <li>Using <strong>function expression</strong></li>
+                    <li>Using <strong>
+                        <a href ='https://www.w3schools.com/Js/js_arrow_function.asp'>
+                            arrow expression
+                        </a></strong></li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>Index arrays</td>
+            <td colspan="2" style="text-align: center;">Same for both</td>
+        </tr>
+        <tr>
+            <td>Associative arrays/objects</td>
+            <td>PHP calles it associative array<br></td>
+            <td>Javascript does not have associative arrays,<br> 
+                their equivalent is an 
+                <strong><a href='https://www.w3schools.com/js/js_objects.asp'>object or a map</a></strong><br>
+            eg: const person = {firstName:"John", lastName:"Doe"};</td>
+        </tr>
+        <tr>
+            <td>Some array functions</td>
+            <td>
+                <ul>
+                    Getting length of array $fruits
+                    <li>count($fruits)</li>
+                    <br>
+                    Appending to an array $fruits
+                    <li>$fruits[] = 'apple'</li>
+                    <br>
+                    Check if 'banana' in array (keys)
+                    <li>array_key_exists('banana',$fruits)</li>
+                    <br>
+                    Check if 'banana' in array (values)
+                    <li>in_array('banana',$fruits)</li>
+                    <br>
+                    Removing 'banana' from $fruits
+                    <li>array_diff($fruits,['banana'])</li>
+                    <br>
+                    Joining an array into a string
+                    <li>implode(', ',$fruits)</li>
+
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    Getting length of array fruits
+                    <li>fruits.length</li>
+                    <br>
+                    Appending to array fruits
+                    <li>fruits.push('apple')</li> 
+                    <br>
+                    Check if 'banana' key in array
+                    <li>console.log("banana" in fruits)</li>
+                    <br>
+                    Check if 'banana' value in array
+                    <li>console.log(fruits.includes('banana'))</li>
+                    <br>
+                    Removes 'banana' from array fruits
+                    <li>fruits.filter(fruit => fruit!== 'banana')</li>
+                    <br>
+                    Joining an array into a string
+                    <li>fruits.join(', ')</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>For loop</td>
+            <td>
+                <ul>
+                    <li>for($i=0;$i<10;$i++)</li>
+                    <li>(loops through values) foreach($items as $item)</li>
+                    <li>(can use to loop and obtain indexes) foreach($items as $index=>$value)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>for(let i=0;i<10;i++)</li>
+                    <li>(loops through values) for(item <strong>of</strong> items)</li>
+                    <li>(loops through indexes) for(item <strong>in</strong> items)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Creating Classes</td>
+            <td>Uses private and public<br>
+                <img src='phpclass.png' height="300"></td>
+            <td>Uses # for private<br>
+                <img src='jsclass.png' height="300"></td>
+        </tr>
+
+    </table>
+</body>
+</html>
